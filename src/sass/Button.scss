@@ -1,7 +1,7 @@
 @use 'variables' as v;
 
 .button{
-    background-color: v.$primaryBtn;
+    background-color: v.$primary;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -17,7 +17,7 @@
     &__shadow{
       width: 60px;
       height: 60px;
-      background: v.$shadowBtn;
+      background: v.$secundary;
       border-radius: 50%;
       position: absolute;
       top: 5px;

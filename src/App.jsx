@@ -1,14 +1,22 @@
+// Hooks
 import { useState } from 'react'
+// Components
 import { Button } from './components/Button'
+import { Card } from './components/Card'
+//Styles
+import './sass/App.scss';
+// Icons
 import { TiArrowBackOutline } from "react-icons/ti";
 import { TiArrowForwardOutline } from "react-icons/ti";
-import './sass/App.scss';
-// import './App.css'
 
 
-function App() {
-  const [pokemonId, setPokemonId] = useState(1)
 
+
+const App = ()=>{
+  const [pokemonId, setPokemonId] = useState(1);
+
+  
+  
   function prevClick(){
     (pokemonId === 1)?
     setPokemonId(1):
@@ -24,6 +32,10 @@ function App() {
       <h1>hola mundos</h1>
       <>
         {/* tarjetas */}
+        <div className="card-container">
+          <Card />
+        </div>
+
         <div className="buttons-container">
           <Button 
             icon={<TiArrowBackOutline />} 
