@@ -1,6 +1,5 @@
 @use 'variables' as v;
 .card{
-    border: 1px solid ;
     width: 200px;
     height: 250px;
     border-radius: 16px;
@@ -28,6 +27,7 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
+        position:absolute;
         top: 56px;
         left: 24px;
        
@@ -35,5 +35,6 @@
     &__img{
         position: absolute;
         z-index: 1;
+        width: 100%;
     }
 }

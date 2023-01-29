@@ -1,11 +1,11 @@
 import '../sass/Card.scss'
 
-const Card = () => {
-    return (
+const Card = ({name, img}) => {
+  return (
       <div className="card">
-          <p className="card__name">Carlos</p>
+          <p className="card__name">{name}</p>
           <div className="card__circle"></div>
-          <img className="card__img" src="" alt="pokemon img" />
+          <img className="card__img" src={img} alt="pokemon img" />
       </div>
     )
   }
