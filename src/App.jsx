@@ -62,8 +62,9 @@ const App = ()=>{
   return (
     <div className="app">
       
-        {/* tarjetas */}
-        <div className="card-container">
+        {/* tarjetas */} 
+        <div className={'card-container card' + pokemonEvolutions.length  }>
+          
           {pokemonEvolutions.map(pokemon => 
           <Card 
             key={pokemon[0]}
